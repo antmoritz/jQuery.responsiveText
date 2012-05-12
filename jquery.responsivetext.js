@@ -13,13 +13,13 @@
 (function($){
 	$.fn.responsiveText = function(options){
 		var _this = this;
-		var settings = $.extend( {
+		var settings = $.extend({
 			"max":	18,
 			"min":	12,
 			"step": 80
 		}, options);
 		
-		var resize = function(){
+		$(window).resize(function(){
 			var size = window.innerWidth / settings.step;
 			
 			if(size > settings.max){
@@ -31,9 +31,6 @@
 			}
 			
 			$(_this).css("font-size", size + "px");
-		};
-		
-		resize();
-		$(window).bind("resize", resize);
+		}).trigger("resize");
 	};
 })(jQuery);
