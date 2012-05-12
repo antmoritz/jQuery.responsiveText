@@ -14,9 +14,9 @@
 	$.fn.responsiveText = function(options){
 		var _this = this;
 		var settings = $.extend({
-			"max":	18,
-			"min":	12,
-			"step": 80
+			"max":	20,
+			"min":	14,
+			"step": 50
 		}, options);
 		
 		$(window).resize(function(){

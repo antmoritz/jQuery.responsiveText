@@ -21,15 +21,15 @@ There are three configuration options. `min`, `max` and `split` which can be pas
 		split: 75
 	});
 
-### min (default: 12)
+### min (default: 14)
 
 The smallest `font-size` acceptable.
 
-### max (default 18)
+### max (default 20)
 
 Tha largest `font-size` acceptable.
 
-### split (default 80)
+### split (default 50)
 
 What to divide `window.innerWidth` by to determine the `font-size`.
 
